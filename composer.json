@@ -1,0 +1,64 @@
+{
+    "name": "adamkhoa03/eloquent-repository",
+    "description": "Eloquent Repository for Laravel",
+    "keywords": [
+        "laravel-repository",
+        "eloquent-repository",
+        "eloquent-repository-generator",
+        "repository",
+        "repository-generator",
+        "eloquent",
+        "model"
+    ],
+    "homepage": "https://github.com/adamkhoa03/eloquent-repository",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Orkhan Ahmadov",
+            "email": "ahmadov90@gmail.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Minh Khoa",
+            "email": "adamkhoa03@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "illuminate/container": "^6.0|^7.0|^8.0",
+        "illuminate/console": "^6.0|^7.0|^8.0",
+        "illuminate/contracts": "^6.0|^7.0|^8.0",
+        "illuminate/database": "^6.0|^7.0|^8.0",
+        "illuminate/support": "^6.0|^7.0|^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0|^5.0|^6.0",
+        "phpunit/phpunit": "^8.0|^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Adamkhoa03\\EloquentRepository\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Adamkhoa03\\EloquentRepository\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Adamkhoa03\\EloquentRepository\\ServiceProvider"
+            ]
+        }
+    }
+}

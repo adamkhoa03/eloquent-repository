@@ -1,0 +1,11 @@
+<?php
+
+namespace DummyNamespace;
+
+use DummyFullModelClass;
+use Adamkhoa03\EloquentRepository\EloquentRepository;
+
+class DummyClass extends EloquentRepository
+{
+    protected $entity = DummyModelClass::class;
+}
