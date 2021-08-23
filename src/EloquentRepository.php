@@ -2,19 +2,19 @@
 
 namespace Adamkhoa03\EloquentRepository;
 
+use Adamkhoa03\EloquentRepository\Repository\Concerns\CreatesEntity;
+use Adamkhoa03\EloquentRepository\Repository\Concerns\DeletesEntity;
+use Adamkhoa03\EloquentRepository\Repository\Concerns\SelectsEntity;
+use Adamkhoa03\EloquentRepository\Repository\Concerns\UpdatesEntity;
+use Adamkhoa03\EloquentRepository\Repository\Contracts\Repository;
 use Illuminate\Support\Arr;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Contracts\Cache\Factory as Cache;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
-use Orkhanahmadov\EloquentRepository\Repository\Criteria;
+use Adamkhoa03\EloquentRepository\Repository\Criteria;
 use Illuminate\Contracts\Container\BindingResolutionException;
-use Orkhanahmadov\EloquentRepository\Repository\Contracts\Repository;
-use Orkhanahmadov\EloquentRepository\Repository\Concerns\CreatesEntity;
-use Orkhanahmadov\EloquentRepository\Repository\Concerns\DeletesEntity;
-use Orkhanahmadov\EloquentRepository\Repository\Concerns\SelectsEntity;
-use Orkhanahmadov\EloquentRepository\Repository\Concerns\UpdatesEntity;
 
 class EloquentRepository implements Repository
 {
